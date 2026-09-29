@@ -280,6 +280,91 @@ h1, h2, h3, h4, h5, h6 {
     color: #263f63 !important;
 }
 
+
+
+    /* =========================================================
+       STREAMLIT CLOUD TEXT VISIBILITY FIX
+       Keep all main-content text dark on the light UI.
+       Sidebar remains controlled separately above.
+       ========================================================= */
+
+    /* Native metric cards */
+    div[data-testid="stMetric"] {
+        color: #263f63 !important;
+    }
+
+    div[data-testid="stMetric"] * {
+        color: #263f63 !important;
+    }
+
+    div[data-testid="stMetricLabel"] {
+        color: #64748b !important;
+    }
+
+    div[data-testid="stMetricValue"] {
+        color: #263f63 !important;
+        font-weight: 800 !important;
+    }
+
+    div[data-testid="stMetricDelta"] {
+        color: #475569 !important;
+    }
+
+    /* Main Streamlit markdown/text */
+    [data-testid="stAppViewContainer"] .stMarkdown,
+    [data-testid="stAppViewContainer"] .stMarkdown p,
+    [data-testid="stAppViewContainer"] .stMarkdown li,
+    [data-testid="stAppViewContainer"] .stMarkdown strong,
+    [data-testid="stAppViewContainer"] .stMarkdown em {
+        color: #263f63 !important;
+    }
+
+    /* Native headings */
+    [data-testid="stAppViewContainer"] h1,
+    [data-testid="stAppViewContainer"] h2,
+    [data-testid="stAppViewContainer"] h3,
+    [data-testid="stAppViewContainer"] h4,
+    [data-testid="stAppViewContainer"] h5,
+    [data-testid="stAppViewContainer"] h6 {
+        color: #263f63 !important;
+    }
+
+    /* Buttons */
+    [data-testid="stAppViewContainer"] .stButton > button {
+        color: #263f63 !important;
+        background: rgba(255,255,255,0.90) !important;
+    }
+
+    [data-testid="stAppViewContainer"] .stButton > button p {
+        color: #263f63 !important;
+    }
+
+    /* Tabs */
+    [data-testid="stAppViewContainer"] button[data-baseweb="tab"] {
+        color: #263f63 !important;
+    }
+
+    /* Data tables */
+    [data-testid="stAppViewContainer"] [data-testid="stTable"] * {
+        color: #263f63 !important;
+    }
+
+    /* Info / warning / error / success boxes */
+    [data-testid="stAppViewContainer"] [data-testid="stAlert"] * {
+        color: #263f63 !important;
+    }
+
+    /* File uploader text */
+    [data-testid="stAppViewContainer"] [data-testid="stFileUploader"] * {
+        color: #263f63 !important;
+    }
+
+    /* Captions */
+    [data-testid="stAppViewContainer"] .stCaption,
+    [data-testid="stAppViewContainer"] small {
+        color: #64748b !important;
+    }
+
 </style>
 """, unsafe_allow_html=True)
 
