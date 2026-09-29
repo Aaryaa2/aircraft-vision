@@ -139,14 +139,27 @@ st.markdown("""
     /* ---------- GLASS CARD ---------- */
 
     .avi-card {
-        background: rgba(255,255,255,0.78);
-        border: 1px solid rgba(148,163,184,0.22);
-        border-radius: 20px;
-        padding: 25px;
-        box-shadow: 0 12px 35px rgba(15,23,42,0.06);
-        backdrop-filter: blur(12px);
-        height: 100%;
-    }
+
+    background: rgba(255,255,255,0.78);
+
+    border: 1px solid rgba(148,163,184,0.22);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow: 0 12px 35px rgba(15,23,42,0.06);
+
+    backdrop-filter: blur(12px);
+
+    height: 100%;
+
+    color: #263f63 !important;
+}
+
+.avi-card * {
+    color: #263f63 !important;
+}
 
     .avi-card:hover {
         border-color: rgba(37,99,235,0.28);
