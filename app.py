@@ -405,7 +405,7 @@ if page == "🏠 Home":
     with col1:
 
         st.html("""
-        <div class="avi-card">
+        <div class="avi-card" style="color:#263f63 !important;">
 
             <div style="font-size:2.3rem;">
                 🛬
@@ -449,7 +449,7 @@ if page == "🏠 Home":
     with col2:
 
         st.html("""
-        <div class="avi-card">
+        <div class="avi-card" style="color:#263f63 !important;">
 
             <div style="font-size:2.3rem;">
                 🔧
@@ -514,7 +514,7 @@ if page == "🏠 Home":
     )
 
     st.html("""
-    <div class="avi-card">
+    <div class="avi-card" style="color:#263f63 !important;">
 
         <div style="
             display:flex;
@@ -1043,7 +1043,7 @@ elif page == "🔧 Damage Inspection":
 
                         st.html(
                             f"""
-                            <div class="avi-card">
+                            <div class="avi-card" style="color:#263f63 !important;">
 
                                 <h4>
                                     {detection["class"].title()}
@@ -1129,7 +1129,7 @@ elif page == "📊 Model Performance":
                 margin:12px 0 24px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         MODEL
                     </div>
@@ -1142,7 +1142,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         INPUT SIZE
                     </div>
@@ -1155,7 +1155,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         TEST IMAGES
                     </div>
@@ -1168,7 +1168,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         CLASSES
                     </div>
@@ -1203,7 +1203,7 @@ elif page == "📊 Model Performance":
                 margin:12px 0 14px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         PRECISION
                     </div>
@@ -1216,7 +1216,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         RECALL
                     </div>
@@ -1229,7 +1229,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         mAP@50
                     </div>
@@ -1242,7 +1242,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         FPS
                     </div>
@@ -1264,7 +1264,7 @@ elif page == "📊 Model Performance":
                 margin:0 0 24px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         F1 SCORE
                     </div>
@@ -1277,7 +1277,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         mAP@50:95
                     </div>
@@ -1290,7 +1290,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         INFERENCE TIME
                     </div>
@@ -1371,7 +1371,7 @@ elif page == "📊 Model Performance":
                 margin:12px 0 18px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         LATERAL GOOD THRESHOLD
                     </div>
@@ -1384,7 +1384,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         ANGULAR GOOD THRESHOLD
                     </div>
@@ -1397,7 +1397,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         LANDING ZONE
                     </div>
@@ -1456,7 +1456,7 @@ elif page == "📊 Model Performance":
                 margin:12px 0 24px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         MODEL
                     </div>
@@ -1469,7 +1469,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         INPUT SIZE
                     </div>
@@ -1482,7 +1482,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         TEST IMAGES
                     </div>
@@ -1495,7 +1495,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         DAMAGE CLASSES
                     </div>
@@ -1534,7 +1534,7 @@ elif page == "📊 Model Performance":
                 margin:12px 0 14px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         PRECISION
                     </div>
@@ -1547,7 +1547,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         RECALL
                     </div>
@@ -1560,7 +1560,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         mAP@50
                     </div>
@@ -1573,7 +1573,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         mAP@50:95
                     </div>
@@ -1595,7 +1595,7 @@ elif page == "📊 Model Performance":
                 margin:0 0 24px 0;
             ">
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         TEST INSTANCES
                     </div>
@@ -1608,7 +1608,7 @@ elif page == "📊 Model Performance":
                     </div>
                 </div>
 
-                <div class="avi-card">
+                <div class="avi-card" style="color:#263f63 !important;">
                     <div style="font-size:12px;opacity:.65;">
                         INFERENCE TIME
                     </div>
