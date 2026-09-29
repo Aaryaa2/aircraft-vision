@@ -1,0 +1,9 @@
+path: C:\Users\ANWESHA\OneDrive\Desktop\CVL Project\data
+train: train/images
+val: valid/images
+test: test/images
+nc: 3
+names:
+- corrosion
+- crack
+- dent
