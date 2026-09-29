@@ -245,6 +245,28 @@ st.markdown("""
         margin-bottom: 7px;
     }
 
+    /* FIX: Force visible heading colors on Streamlit Cloud */
+
+.avi-card h1,
+.avi-card h2,
+.avi-card h3,
+.avi-card h4,
+.avi-card h5,
+.avi-card h6 {
+    color: #263f63 !important;
+}
+
+.avi-hero h1,
+.avi-hero h2,
+.avi-hero h3,
+.avi-hero h4 {
+    color: #263f63 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #263f63 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
