@@ -1,8 +1,10 @@
 streamlit
 ultralytics
-opencv-python
-numpy
 pandas
 pillow
 matplotlib
 plotly
+streamlit
+ultralytics
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
