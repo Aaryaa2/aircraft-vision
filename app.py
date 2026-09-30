@@ -157,6 +157,28 @@ st.markdown("""
     color: #263f63 !important;
 }
 
+/* =========================================
+   MODEL PERFORMANCE TAB VISIBILITY
+   ========================================= */
+
+.stTabs [data-baseweb="tab"] {
+    color: #263f63 !important;
+    font-weight: 600 !important;
+}
+
+.stTabs [data-baseweb="tab"] p {
+    color: #263f63 !important;
+    font-weight: 600 !important;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    color: #ef4444 !important;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] p {
+    color: #ef4444 !important;
+}
+
 .avi-card * {
     color: #263f63 !important;
 }
