@@ -158,25 +158,54 @@ st.markdown("""
 }
 
 /* =========================================
-   MODEL PERFORMANCE TAB VISIBILITY
+   STREAMLIT TAB TEXT VISIBILITY
    ========================================= */
 
-.stTabs [data-baseweb="tab"] {
+.stTabs [role="tab"] {
     color: #263f63 !important;
     font-weight: 600 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #263f63 !important;
 }
 
-.stTabs [data-baseweb="tab"] p {
+.stTabs [role="tab"] * {
     color: #263f63 !important;
     font-weight: 600 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #263f63 !important;
 }
 
-.stTabs [data-baseweb="tab"][aria-selected="true"] {
+.stTabs [role="tab"][aria-selected="true"] {
     color: #ef4444 !important;
+    -webkit-text-fill-color: #ef4444 !important;
 }
 
-.stTabs [data-baseweb="tab"][aria-selected="true"] p {
+.stTabs [role="tab"][aria-selected="true"] * {
     color: #ef4444 !important;
+    -webkit-text-fill-color: #ef4444 !important;
+}
+
+.stTabs [data-baseweb="tab-list"] button {
+    color: #263f63 !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #263f63 !important;
+}
+
+.stTabs [data-baseweb="tab-list"] button * {
+    color: #263f63 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #263f63 !important;
+}
+
+.stTabs [data-baseweb="tab-list"] button[aria-selected="true"] {
+    color: #ef4444 !important;
+    -webkit-text-fill-color: #ef4444 !important;
+}
+
+.stTabs [data-baseweb="tab-list"] button[aria-selected="true"] * {
+    color: #ef4444 !important;
+    -webkit-text-fill-color: #ef4444 !important;
 }
 
 .avi-card * {
