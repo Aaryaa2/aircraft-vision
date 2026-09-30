@@ -22,10 +22,8 @@ def analyze_runway(image):
 
     results = model.predict(
         source=image_array,
-        conf=0.25,
-        imgsz=1536,
-        iou=0.7,
-        augment=True,
+        conf=0.05,
+        imgsz=1280,
         verbose=False
 )
 
@@ -76,10 +74,8 @@ def analyze_runway(image):
 
                 tile_results = model.predict(
                     source=tile,
-                    conf=0.001,
-                    imgsz=1024,
-                    iou=0.7,
-                    augment=True,
+                    conf=0.01,
+                    imgsz=768,
                     verbose=False
                 )
 
