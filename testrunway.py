@@ -1,46 +1,73 @@
 from ultralytics import YOLO
+from PIL import Image
+import os
 
-# Load Member 1's runway model
-model = YOLO("models/runway_best.pt")
+MODEL_PATH = "models/runway_best.pt"
 
-print("Runway model loaded successfully!")
+model = YOLO(MODEL_PATH)
+
+print("\n================================")
+print("RUNWAY MODEL DIRECT TEST")
+print("================================")
+
+print("Model:", MODEL_PATH)
 print("Classes:", model.names)
 
-# Run prediction
-results = model.predict(
-    source="results/runway/test_image.jpg",
-    conf=0.25,
-    save=True
-)
+# CHANGE THESE TWO PATHS
+images = [
+    
+    "results/runway/new_image.jpg"
+]
 
-print("\nPrediction completed!")
+for image_path in images:
 
-# Print detections
-for result in results:
+    print("\n--------------------------------")
+    print("Testing:", image_path)
+    print("--------------------------------")
+
+    if not os.path.exists(image_path):
+        print("❌ FILE NOT FOUND")
+        continue
+
+    results = model.predict(
+        source=image_path,
+        conf=0.001,
+        imgsz=1536,
+        augment=True,
+        verbose=True
+    )
+
+    result = results[0]
 
     if result.boxes is None or len(result.boxes) == 0:
-        print("No runway detected.")
-
+        print("❌ NO RUNWAY DETECTED")
     else:
+        print("✅ DETECTIONS FOUND")
 
         for box in result.boxes:
 
             class_id = int(box.cls[0])
             confidence = float(box.conf[0])
 
-            class_name = model.names[class_id]
-
-            x1, y1, x2, y2 = map(
-                int,
-                box.xyxy[0].tolist()
-            )
+            bbox = box.xyxy[0].tolist()
 
             print(
-                f"Detected: {class_name} | "
-                f"Confidence: {confidence:.2f}"
+                f"Class: {model.names[class_id]} | "
+                f"Confidence: {confidence:.4f} | "
+                f"BBox: {bbox}"
             )
 
-            print(
-                f"Bounding Box: "
-                f"[{x1}, {y1}, {x2}, {y2}]"
-            )
+    # Save annotated image
+    output_path = (
+        "results/"
+        + os.path.basename(image_path).split(".")[0]
+        + "_direct_result.jpg"
+    )
+
+    result.save(filename=output_path)
+
+    print("Saved:", output_path)
+
+print("\n================================")
+print("TEST COMPLETE")
+print("================================")
